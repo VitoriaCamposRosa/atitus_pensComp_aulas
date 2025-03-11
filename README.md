@@ -1,13 +1,39 @@
 # Pensamento Computacional - Execícios de aula
 
 - [Prof Matheus Jardim Bernardes](https://matheusjardimb.com/)
+- [Vitória Campos da Rosa](https://github.com/VitoriaCamposRosa)
 - [Atitus.edu.br](https://atitus.edu.br/)
 
 Exercícios de aula da disciplina de Pensamento Computacional.
 
 ## Sobre mim
 
---PREENCHER--
+*Sou estudante do primeiro semestre da faculdade ATITUS e estou ansiosa para minha nova vida escolar.*
+
+# Coisas que eu gosto - Bem legal :3
+
+**Hobbie:**
+
+- ![Desenhar](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISni1Vz_3xnNJf46y0PWBAAClrGMrKNR87Q&s)
+
+**Salgado:**
+
+- ![Coxinha](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLigfyds3_5OSm0C4_VTYXDa5g6e32kV9h7g&s)
+
+**Doce:**
+
+- ![Coxinha](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBHcQnHxrITTzv32vGrwhKEvZ5S0vbun01OA&s)
+
+**Animal:** 
+
+- ![Gato Preto](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPmZ1YkkkolO2_XKZQrBGbKAvN9TkJqcJ4Kw&s)
+
+**Vídeos favoritos:**
+
+- [Alanzoka](https://youtu.be/BuBzgQ49hNI?feature=shared)
+- [CapJoga](https://youtu.be/iRAF30ntd-s?feature=shared)
+- [Maethe](https://youtu.be/1D9oQR7MKdQ?feature=shared)
+
 
 ## DICAS:
 
