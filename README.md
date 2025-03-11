@@ -34,18 +34,7 @@ Exercícios de aula da disciplina de Pensamento Computacional.
 - [CapJoga](https://youtu.be/iRAF30ntd-s?feature=shared)
 - [Maethe](https://youtu.be/1D9oQR7MKdQ?feature=shared)
 
-# Tabela Sobre Git
-
-| Comando | Descrição |
-| --- | --- |
-| `git add` | Move as alterações do diretório de trabalho para a área de staging |
-| `git branch` | Permite criar ambientes de desenvolvimento isolados em um único repositório. |
-| `git clean` | Remove os arquivos não monitorados do diretório de trabalho. |
-| `git clone` | Cria cópia de um Repositório do Git existente. |
-| `git commit` | Faz um commit do instantâneo preparado no histórico do projeto. |
-| `git fetch` | A busca faz o download a partir da ramificação de outro repositório, junto com todos os commits e arquivos associados. |
-| `git init` |Inicializa novo repositório do Git. |
-| `git log` |Permite explorar as revisões anteriores de determinado projeto.  |
+# Informações dos Comandos Git
 
 
 ## DICAS:
