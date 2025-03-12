@@ -36,6 +36,8 @@ Exercícios de aula da disciplina de Pensamento Computacional.
 
 # Informações dos Comandos Git
 
+[Tabela Sobre Git](https://github.dev/VitoriaCamposRosa/atitus_pensComp_aulas/blob/aa9ceca53db7213cd684c6de77b6cf769b788d7d/InfoGit)
+
 
 ## DICAS:
 
