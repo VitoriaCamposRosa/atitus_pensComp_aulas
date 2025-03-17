@@ -10,11 +10,7 @@ print("Olá, tenho", idade)
 
 ano_nasc = input("Qual seu ano de nascimento?")
 idade = 2025 - ano_nasc
-print("Sua idade é", idade "?")
-if idade == idade:
-print("Idade verdadeira")
-else
-print("Idade falsa")
+print("Sua idade é", idade)
 
 ano = int(input("Ditige um ano:"))
 print("O ano digitado foi:", ano)
