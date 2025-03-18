@@ -4,10 +4,8 @@ def hora_para_minuto(valor):
 def minuto_para_segundo(valor):
     return valor * 60
 
-
 def hora_para_segundo(valor):
-    return valor * 60 * 60
-
+   return minuto_para_segundo(valor) * 60
 
 assert hora_para_minuto(0) == 0
 assert hora_para_minuto(1) == 60
