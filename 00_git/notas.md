@@ -1,1 +1,4 @@
 - identação - espaços necessários em python
+- notepad nome.py
+- python nome.py
+- variáveis - informações que podem ser modificados durante o código
