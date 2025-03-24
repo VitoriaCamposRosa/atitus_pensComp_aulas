@@ -4,3 +4,7 @@
 - variáveis - informações que podem ser modificados durante o código
 - print - imprime/mostra na tela
 - input - pede para o user informar algo e guarda na variável
+- idade = 25
+    idade == 26: falso
+- idade = 25 
+    (idade +1) == 26: verdadeiro 
