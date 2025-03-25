@@ -1,10 +1,11 @@
 def eh_par(numero):
-    return numero % 2 == 0
+    if numero % 2 == 0: #Pode utilizar return numero % 2 == 0
+        return True
+    else:
+        return False
 
 def eh_impar(numero):
-    # Preencher
-    # Use a função anterior
-    pass
+     return not eh_par(numero) 
 
 def test():
     assert eh_par(0)
@@ -18,3 +19,5 @@ def test():
     assert eh_impar(5)
     assert not eh_impar(0)
     assert not eh_impar(2)
+
+print("Terminou com sucesso!")
