@@ -1,15 +1,37 @@
 def eh_bissexto(ano):
-    if ano % 4 == 0:
+    if ano % 4 == 0: #Posso encurtar utilizando: return (ano % 4) == 0
         return True
     else:
         return False
     
 def proximo_bissexto(ano):
-     return not eh_bissexto(ano)
-    if ano % 4 == 0 < 4:
-        return True
-    else:
-        return False
+    if ano % 4 == 0:
+        return ano
+    if ano % 4 == 3:
+       return ano + 1
+    if ano % 4 == 2:
+       return ano + 2
+    if ano % 4 == 1:
+       return ano + 3
+
+#def proximo_bissexto(ano):
+    #resto: ano % 4
+    #if resto == 0:
+        #return ano
+    #if resto == 3:
+       #return ano + 1
+    #if resto == 2:
+       #return ano + 2
+    #if resto == 1:
+       #return ano + 3
+
+#def proximo_bissexto(ano):
+    #return (ano + 3) // 4 * 4
+
+#def proximo_bissexto(ano):
+    #if eh_bissexto(ano)
+        #return ano
+    #return ano + (4 - (ano % 4))
 
 def test():
     assert eh_bissexto(0)

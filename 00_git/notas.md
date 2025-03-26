@@ -8,3 +8,9 @@
     idade == 26: falso
 - idade = 25 
     (idade +1) == 26: verdadeiro 
+- Def é assinatura do método
+- == - retorna um bolleano, pois é um operador lógico
+- operadores matemáticos retornam números
+- quando comparo número com número vira bolleano
+    ex: if ano % 4 == 0
+
