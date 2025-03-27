@@ -13,4 +13,5 @@
 - operadores matemáticos retornam números
 - quando comparo número com número vira bolleano
     ex: if ano % 4 == 0
-
+- for letra in 'matheus'
+    print (letra)
