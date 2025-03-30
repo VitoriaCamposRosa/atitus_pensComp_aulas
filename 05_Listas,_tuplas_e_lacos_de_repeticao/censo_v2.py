@@ -1,6 +1,6 @@
 MIN_IDADE_APOSENTADORIA = 62
 MAX_SALARIO_MEI = 6750
-ANO_ATUAL = 2024
+ANO_ATUAL = 2025
 
 entrevistas = [
     # nome, ano_nasc, estuda, trabalha, renda
