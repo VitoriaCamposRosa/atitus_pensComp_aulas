@@ -1,10 +1,9 @@
 def somatorio(numero):
     if numero == -1:
         return None
-    for numero in range(10):
-        print(numero, numero * (numero + 1) / 2)
-        return numero
-
+    if numero < 0:
+        return numero * (numero + 1) // 2
+        
 def test():
     assert somatorio(-1) is None
     assert somatorio(0) == 0

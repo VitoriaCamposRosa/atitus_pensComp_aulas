@@ -1,11 +1,10 @@
 def fatorial(numero):
-    if numero == 0:
+    if numero == 0 or numero == 1:
         return 1
-    if numero == -1:
+    if numero < 0:
         return None
-    for numero in range(6):
-        print(numero, numero * fatorial (numero - 1))
-        return numero
+    for numero < 0:
+        return numero * fatorial(numero - 1)
     
 def test():
     assert fatorial(0) == 1
