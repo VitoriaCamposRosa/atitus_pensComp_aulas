@@ -15,3 +15,18 @@
     ex: if ano % 4 == 0
 - for letra in 'matheus'
     print (letra)
+
+# Operadores matemáticos:
++ - * / ** % //
+
+>>> Resultado será um número <<<
+
+# Operadoress relacionais:
+== != >= > < <=
+
+>>> Resultado será um boolean (True/False) <<<
+
+# Operadores lógicos:
+and or not
+
+>>> Resultado será um boolean (True/False) <<<
