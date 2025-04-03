@@ -3,8 +3,12 @@ def fatorial(numero):
         return 1
     if numero < 0:
         return None
-    for numero < 0:
-        return numero * fatorial(numero - 1)
+    resultado = 0
+    contador = 1
+    while contador <= numero:
+        resultado = resultado * contador
+        contador = contador + 1
+    return resultado
     
 def test():
     assert fatorial(0) == 1
@@ -14,5 +18,7 @@ def test():
     assert fatorial(4) == 24
     assert fatorial(5) == 120
     assert fatorial(-1) is None
+
+
 
 print("Terminou com sucesso!")
