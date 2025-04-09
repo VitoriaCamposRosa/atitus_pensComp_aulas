@@ -1,8 +1,11 @@
 def somatorio(numero):
-    if numero == -1:
-        return None
     if numero < 0:
-        return numero * (numero + 1) // 2
+    resultado = 0
+    contador = 1
+    while contador <= numero:
+        resultado = numero * (numero + 1) // 2
+        contador = contador + 1
+    return resultado
         
 def test():
     assert somatorio(-1) is None

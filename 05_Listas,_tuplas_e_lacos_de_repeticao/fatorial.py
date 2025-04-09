@@ -1,14 +1,15 @@
 def fatorial(numero):
-    if numero == 0 or numero == 1:
-        return 1
-    if numero < 0:
-        return None
-    resultado = 0
-    contador = 1
-    while contador <= numero:
-        resultado = resultado * contador
-        contador = contador + 1
-    return resultado
+    factorial = 1
+    for x in range(numero)
+        factorial = factorial * (x + 1)
+    print("Fatorial de ", numero, "é", factorial)
+
+#alternativa
+num = int(input("Digite um número para calcular seu fatorial: "))
+fatorial = 1
+for x in range(num):
+    fatorial = fatorial * (x + 1)
+print("Fatorial de ", num, "é", fatorial)
     
 def test():
     assert fatorial(0) == 1
@@ -18,7 +19,6 @@ def test():
     assert fatorial(4) == 24
     assert fatorial(5) == 120
     assert fatorial(-1) is None
-
 
 
 print("Terminou com sucesso!")
