@@ -11,8 +11,8 @@ def espera():
 
 
 def desenha_tela():
-    # Preencher
-    pass
+    altura = 6
+    largura = 12
 
 
 desenha_tela()
