@@ -13,7 +13,7 @@ else:
         resultado = valor - (valor * (10 / 100))
         print(f"Valor com desconto de 10%: R${resultado:.2f}")
     elif forma_pagto == 3:
-        print(f"Parcelado em 2x sem juros. Valor total: R${valor:.2f}. Cada parcela: R${valor / 2:.2f}")
+        print(f"Parcelado em 2x sem juros. Valor total: R${valor}")
     elif forma_pagto == 4:
         resultado = valor + (valor * (10 / 100))
         print(f"Valor com acréscimo de 10%: R${resultado:.2f}")

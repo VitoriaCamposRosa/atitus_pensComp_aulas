@@ -2,7 +2,7 @@ ANO_ATUAL = 2025
 
 
 def saudacao(nome, sobrenome, ano_nascimento):
-    if not (0 < ano_nascimento <= ANO_ATUAL):
+    if not (0 <= ano_nascimento < ANO_ATUAL):
         return None
 
     idade = ANO_ATUAL - ano_nascimento - 1
