@@ -30,3 +30,25 @@
 and or not
 
 >>> Resultado será um boolean (True/False) <<<
+
+fatorial 
+
+#alternativa
+num = int(input("Digite um número para calcular seu fatorial: "))
+fatorial = 1
+for x in range(num):
+    fatorial = fatorial * (x + 1)
+print("Fatorial de ", num, "é", fatorial)
+
+somatorio
+
+#alternativa
+def somatorio(numero):
+    if numero < 0:
+        return None
+    resultado = 0
+    contador = 1
+    while contador <= numero:
+        resultado = resultado + contador
+        contador = contador + 1
+    return resultado

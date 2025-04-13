@@ -3,13 +3,6 @@ def fatorial(numero):
     for x in range(numero)
         factorial = factorial * (x + 1)
     print("Fatorial de ", numero, "é", factorial)
-
-#alternativa
-num = int(input("Digite um número para calcular seu fatorial: "))
-fatorial = 1
-for x in range(num):
-    fatorial = fatorial * (x + 1)
-print("Fatorial de ", num, "é", fatorial)
     
 def test():
     assert fatorial(0) == 1

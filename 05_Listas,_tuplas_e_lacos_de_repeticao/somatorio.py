@@ -1,5 +1,6 @@
 def somatorio(numero):
     if numero < 0:
+        return None   
     resultado = 0
     contador = 1
     while contador <= numero:
@@ -19,16 +20,5 @@ def test():
     assert somatorio(7) == 28
     assert somatorio(8) == 36
     assert somatorio(9) == 45
-
-#alternativa
-def somatorio(numero):
-    if numero < 0:
-        return None
-    resultado = 0
-    contador = 1
-    while contador <= numero:
-        resultado = resultado + contador
-        contador = contador + 1
-    return resultado
 
 print("Terminou com sucesso!")
