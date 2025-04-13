@@ -1,4 +1,4 @@
-def multiply_matrix_by_scalar(matrix, scalar): # Matriz
+def multiply_matrix_by_scalar(matrix, scalar): # Matrizes
     resultado = []
 
     for linha in matrix: 

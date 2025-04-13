@@ -22,5 +22,5 @@
 #                 tentativas += 1
 #                 descobre_senha = int(input("Tente adivinhar a senha: "))
 #                 print()
-#             print("Parabéns! Você descobriu a senha.. O número de tentativas foram ", tentativas)
+#             print("Parabéns! Você descobriu a senha. O número de tentativas foram ", tentativas)
 #             break

@@ -1,4 +1,4 @@
-def limpa_tela():
+def limpa_tela(): #DVD Animation
     import os
 
     os.system("cls" if os.name == "nt" else "clear")  # Limpa o console
