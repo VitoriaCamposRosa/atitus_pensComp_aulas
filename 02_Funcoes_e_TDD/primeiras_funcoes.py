@@ -1,4 +1,4 @@
-def numero_favorito():
+def numero_favorito(): # Funções e TDD
     return 42
 
 
