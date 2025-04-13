@@ -1,4 +1,4 @@
-def baskhara(a, b, c):
+def baskhara(a, b, c): # Baskhara
     if a == 0:
         return None
     
@@ -22,3 +22,5 @@ def test():
 
     assert baskhara(1, 2, 3) is None
     assert baskhara(1, 0, 0) == [0]
+    assert bhaskara(0, 2, 3) is None
+

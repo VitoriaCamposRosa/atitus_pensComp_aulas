@@ -1,8 +1,13 @@
-def fatorial(numero):
+def fatorial(numero): # Fatorial
+    if numero < 0:
+        return None
+    elif numero == 0 or numero == 1:
+        return 1
+
     factorial = 1
-    for x in range(numero)
+    for x in range(numero):
         factorial = factorial * (x + 1)
-    print("Fatorial de ", numero, "é", factorial)
+    return factorial
     
 def test():
     assert fatorial(0) == 1
