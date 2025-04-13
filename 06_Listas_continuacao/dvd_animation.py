@@ -10,9 +10,8 @@ def espera():
     time.sleep(0.5)  # Espera meio segundo (500ms)
 
 
-def desenha_tela():
-    altura = 6
-    largura = 12
+def desenha_tela(altura, largura, x, y):
+    
 
 
 desenha_tela()

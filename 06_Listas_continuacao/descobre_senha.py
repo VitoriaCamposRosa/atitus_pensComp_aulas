@@ -2,20 +2,20 @@ print("Bem vindo ao Jogo Descobre Senha! Será que você consegue advinhar?")
 print()
 
 senha_secreta = 6
-tentativas = 1
+tentativas = 0
 
-descobre_senha = int(input("Digite um número de 1 a 10 que você supõe que é a senha: "))
-print()
-
-
-if descobre_senha < 0 or descobre_senha > 10:
-     print("É um número de 1 a 10. Digite um novo número")
-     return None
-else:
-    print("Muito bem! Vamos verificar se está correto")
+while True:
+    descobre_senha = int(input("Digite um número de 1 a 10 que você supõe que é a senha: "))
     print()
 
-while descobre_senha != segredo: 
+    if descobre_senha < 1 or descobre_senha > 10:
+        print("É um número de 1 a 10. Digite um novo número")
+    else:
+        break
+
+tentativas += 1
+
+while descobre_senha != senha_secreta: 
     print("Ah não, está incorreto.Tente novamente")
     print()
     tentativas += 1
