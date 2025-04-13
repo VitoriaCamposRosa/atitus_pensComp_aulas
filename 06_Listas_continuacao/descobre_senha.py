@@ -11,9 +11,8 @@ while True:
     if descobre_senha < 1 or descobre_senha > 10:
         print("É um número de 1 a 10. Digite um novo número")
     else:
+        tentativas += 1
         break
-
-tentativas += 1
 
 while descobre_senha != senha_secreta: 
     print("Ah não, está incorreto.Tente novamente")
