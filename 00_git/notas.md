@@ -31,6 +31,8 @@ and or not
 
 >>> Resultado será um boolean (True/False) <<<
 
+# Feitos em aula:
+
 fatorial 
 
 #alternativa
