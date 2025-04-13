@@ -1,4 +1,4 @@
-def area(largura, altura):
+def area(largura, altura): # Pitagoras
     return largura * altura
 
 def perimetro(largura, altura):
