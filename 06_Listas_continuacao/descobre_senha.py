@@ -12,14 +12,16 @@ while True:
         print("É um número de 1 a 10. Digite um novo número")
     else:
         tentativas += 1
-        break
-
-while descobre_senha != senha_secreta: 
-    print("Ah não, está incorreto.Tente novamente")
-    print()
-    tentativas += 1
-    descobre_senha = int(input("Tente adivinhar a senha: "))
-    print()
-
-print("Parabéns! Você descobriu a senha.. O número de tentativas foram ", tentativas)
+        if descobre_senha == senha_secreta:
+            print("Parabéns! Você descobriu a senha na primeira tentativa.")
+            break
+        else: 
+            print("Ah não, está incorreto.Tente novamente")
+            print()
+            while descobre_senha != senha_secreta: 
+                tentativas += 1
+                descobre_senha = int(input("Tente adivinhar a senha: "))
+                print()
+            print("Parabéns! Você descobriu a senha.. O número de tentativas foram ", tentativas)
+            break
 
