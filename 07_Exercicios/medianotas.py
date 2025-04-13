@@ -1,4 +1,4 @@
-nota1 = int(input("Digite a primeira nota: "))
+nota1 = int(input("Digite a primeira nota: ")) #Medias
 nota2 = int(input("Digite a segunda nota: "))
 nota3 = int(input("Digite a terceira nota: "))
 nota4 = int(input("Digite a quarta nota: "))

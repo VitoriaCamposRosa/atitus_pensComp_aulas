@@ -1,5 +1,12 @@
 def status_aluno(notas):
-    pass
+    notas_validas = [nota for nota in notas if nota is not None]
+
+    if not notas_validas:
+        return False
+
+    media = sum(notas_validas) / len(notas_validas)
+
+    return media >= 7
 
 def test():
     assert status_aluno([10, 10, 10, 10])

@@ -1,4 +1,4 @@
-def fahrenheit_para_celsius(valor):
+def fahrenheit_para_celsius(valor): #Temperatura
     return (valor - 32) / 1.8
 
 

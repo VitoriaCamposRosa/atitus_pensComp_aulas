@@ -1,4 +1,4 @@
-num = int(input("Digite um número positivo de até três digitos"))
+num = int(input("Digite um número positivo de até três digitos")) #cent, dez e uni
 print("O número escolhido foi: ", num)
 
 if num < 0 or num > 999:

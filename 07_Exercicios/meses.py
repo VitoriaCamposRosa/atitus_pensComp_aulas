@@ -1,4 +1,4 @@
-mes = int(input("Digite o número do mês: "))
+mes = int(input("Digite o número do mês: ")) #Meses
 
 if mes <= 0 or mes > 12:
     print("Mês inválido")

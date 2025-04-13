@@ -1,4 +1,4 @@
-x = int(input("Digite o primeiro valor: "))
+x = int(input("Digite o primeiro valor: ")) #Dois valores
 y = int(input("Digite o segundo valor: "))
 
 soma = x + y

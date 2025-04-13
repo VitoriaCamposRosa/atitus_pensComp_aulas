@@ -6,7 +6,7 @@ if dia <= 0 or dia > 31:
     print("Dia inválido")
 elif mes <= 0 or mes > 12:
     print("Mês inválido")
-elif ano <= 0:
+elif ano < 1000:
     print("Ano inválido")
 else:
     print("Todas as condições estão válidas")
