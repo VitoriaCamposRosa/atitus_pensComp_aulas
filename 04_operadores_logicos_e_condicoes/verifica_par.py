@@ -1,4 +1,4 @@
-def eh_par(numero):
+def eh_par(numero): # Par
     if numero % 2 == 0: #Pode utilizar return numero % 2 == 0
         return True
     else:

@@ -1,4 +1,4 @@
-def eh_positivo(numero):
+def eh_positivo(numero): # Positivo
     if numero > 0: #Pode utilizar return numero > 0
         return True
     else:
