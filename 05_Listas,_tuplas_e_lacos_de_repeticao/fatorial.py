@@ -1,4 +1,4 @@
-def fatorial(numero): # Fatorial
+def fatorial(numero): # Factorial
     if numero < 0:
         return None
     elif numero == 0 or numero == 1:

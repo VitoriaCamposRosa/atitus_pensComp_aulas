@@ -22,5 +22,5 @@ def test():
 
     assert baskhara(1, 2, 3) is None
     assert baskhara(1, 0, 0) == [0]
-    assert bhaskara(0, 2, 3) is None
+    assert baskhara(0, 2, 3) is None
 
