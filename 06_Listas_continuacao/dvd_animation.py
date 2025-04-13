@@ -13,8 +13,8 @@ def espera():
 def desenha_tela(altura, largura, x, y, colisoes):
     limpa_tela()
     for i in range(altura):
-        for j in range(largura)
-        if i == 0 or i == altura - 1 or j == 0 or j == largura - 1:
+        for j in range(largura):
+            if i == 0 or i == altura - 1 or j == 0 or j == largura - 1:
                 print("#", end="") 
             elif i == y and j == x:
                 print("A", end="") 
@@ -38,11 +38,12 @@ while True:
     x += direcao_x
     y += direcao_y
 
-    if x == 0 or x == largura - 2:
+    if x == 0 or x == largura - 1:
         direcao_x *= -1
         colisoes += 1
-    if y == 0 or y == altura - 2:
+    if y == 0 or y == altura - 1:
         direcao_y *= -1
         colisoes += 1
-    
-desenha_tela()
+
+if colisoes > 100:
+    break
