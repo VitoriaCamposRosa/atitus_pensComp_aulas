@@ -1,4 +1,4 @@
-def numero_positivo_u_d_c():
+def numero_positivo_u_d_c(): 
     num = int(input("Digite um número positivo de até três digitos")) #cent, dez e uni
     print("O número escolhido foi: ", num)
 

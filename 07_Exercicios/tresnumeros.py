@@ -1,4 +1,4 @@
-def tres_valores():
+def tres_valores(): 
     x = int(input("Digite o primeiro valor: ")) # Três num
     y = int(input("Digite o segundo valor: "))
     z = int(input("Digite o terceiro valor: "))

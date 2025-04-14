@@ -1,4 +1,4 @@
-def meses_validos():
+def meses_validos(): 
     mes = int(input("Digite o número do mês: ")) #Meses
 
     if mes <= 0 or mes > 12:

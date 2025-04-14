@@ -1,5 +1,5 @@
 def forma_pagamento():
-    valor = int(input("Digite um valor: ")) #Forma pagamento
+    valor = int(input("Digite um valor: ")) #Forma pagamento 
     print("O valor escolhido foi:", valor)
     print()
     forma_pgto = int(input("Escolha uma forma de Pagamento! 1 - para PIX, 2 - Para À Vista, 3 - Parcelado em 2x sem juros, 4 - Parcelado em 3x ou mais com juros"))

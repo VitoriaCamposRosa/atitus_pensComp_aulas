@@ -1,4 +1,4 @@
-def avalia_data():
+def avalia_data(): 
     dia = int(input("Digite o número do dia: "))
     mes = int(input("Digite o número do mês: "))
     ano = int(input("Digite o número do ano: "))

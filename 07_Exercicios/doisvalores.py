@@ -1,5 +1,5 @@
-def dois_valores(): 
-    x = int(input("Digite o primeiro valor: ")) #Dois valores
+def dois_valores():   #Dois valores
+    x = int(input("Digite o primeiro valor: ")) 
     y = int(input("Digite o segundo valor: "))
 
     soma = x + y

@@ -15,7 +15,7 @@ def menor_numero(lista):
     return menor
 
 def numeros_pares(lista):
-     pares = []
+    pares = []
     for numero in lista:
         if numero % 2 == 0: 
             pares.append(numero)
