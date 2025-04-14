@@ -1,10 +1,11 @@
-mes = int(input("Digite o número do mês: ")) #Meses
+def meses_validos():
+    mes = int(input("Digite o número do mês: ")) #Meses
 
-if mes <= 0 or mes > 12:
-    print("Mês inválido")
-else:
-    meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
-             "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+    if mes <= 0 or mes > 12:
+        print("Mês inválido")
+    else:
+        meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
+                "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
     
-    print(meses[mes - 1])  
+        print(meses[mes - 1])  
 

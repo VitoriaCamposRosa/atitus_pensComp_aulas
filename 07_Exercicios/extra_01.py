@@ -1,4 +1,4 @@
-def letra_em_texto(texto, letra): # Extra 1
+def letra_em_texto(texto, letra): # Extra 01
     for char in texto:
         if char == letra:
             return True

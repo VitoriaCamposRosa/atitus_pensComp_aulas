@@ -1,4 +1,4 @@
-def status_aluno(notas):
+def status_aluno(notas): # Extra 05
     notas_validas = [nota for nota in notas if nota is not None]
 
     if not notas_validas:

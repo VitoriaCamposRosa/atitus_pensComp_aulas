@@ -45,5 +45,3 @@ while True:
         direcao_y *= -1
         colisoes += 1
 
-if colisoes > 100:
-    break

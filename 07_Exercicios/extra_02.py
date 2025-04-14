@@ -1,4 +1,4 @@
-def maior_numero(lista): 
+def maior_numero(lista): # Extra 02
     maior = lista[0]
 
     for num in lista[1:]:
