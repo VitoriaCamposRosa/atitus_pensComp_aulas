@@ -6,7 +6,9 @@ set -e
 # Function to run pytest on a given file with minimal output
 run_tests() {
   local file=$1
-  pytest -q --tb=no --disable-warnings "$file"
+  echo "Executando testes no arquivo: $file"
+  pytest --tb=no --disable-warnings "$file"/*.py
+  echo '-----------------------------------------------------'
 }
 
 run_tests 02_Funcoes_e_TDD/*.py
