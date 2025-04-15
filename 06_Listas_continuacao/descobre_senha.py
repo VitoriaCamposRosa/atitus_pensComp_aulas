@@ -1,4 +1,4 @@
-def descobre_senha_secreta(senha_secreta, tentativas):
+def descobre_senha_secreta():
     print("Bem vindo ao Jogo Descobre Senha! Será que você consegue advinhar?")
     print()
 
