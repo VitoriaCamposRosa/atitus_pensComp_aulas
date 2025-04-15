@@ -4,7 +4,7 @@ def letra_em_texto(texto, letra): # Extra 01
             return True
     return False
 
-def conta_letra_em_texto(texto, letra):
+def conta_letra_em_texto(texto, letra): 
     contador = 0
     for char in texto:
         if char == letra:

@@ -1,4 +1,4 @@
-def valor_pgto(valor, forma_pgto): #Extra 06 
+def valor_pgto(valor, forma_pgto): #Extra 06  
     if forma_pgto == 1:
         return valor - (valor * (15 / 100))
     elif forma_pgto == 2:

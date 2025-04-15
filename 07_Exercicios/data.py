@@ -8,7 +8,7 @@ def avalia_data(dia, mes, ano):
     else:
         return "Todas as condições estão válidas"
 
-def test():
+def test(): 
     assert avalia_data(32, 1, 2020) == "Dia inválido"
     assert avalia_data(10, 13, 2020) == "Mês inválido"
     assert avalia_data(10, 10, 999) == "Ano inválido"

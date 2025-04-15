@@ -12,7 +12,7 @@ def menor_numero(lista):
     for num in lista[1:]:
         if num < menor:
             menor = num
-    return menor
+    return menor 
 
 def numeros_pares(lista):
     pares = []
