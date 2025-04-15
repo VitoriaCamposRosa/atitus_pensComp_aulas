@@ -7,7 +7,7 @@ set -e
 run_tests() {
   local file=$1
   echo "Executando testes no arquivo: $file"
-  pytest --tb=no --disable-warnings "$file"/*.py
+  pytest --tb=no --disable-warnings "$file"
   echo '-----------------------------------------------------'
 }
 
