@@ -1,4 +1,4 @@
-def calcula_classe_social(salarios, salario_minimo): # Extra 04 
+def calcula_classe_social(salarios, salario_minimo): # Extra 04  
     if not salarios:
         return None
     

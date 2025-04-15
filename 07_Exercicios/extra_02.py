@@ -4,7 +4,7 @@ def maior_numero(lista): # Extra 02
     for num in lista[1:]:
         if num > maior:
             maior = num
-    return maior
+    return maior 
 
 def menor_numero(lista):
     menor = lista[0]

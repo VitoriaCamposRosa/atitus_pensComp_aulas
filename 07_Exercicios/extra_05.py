@@ -8,7 +8,7 @@ def status_aluno(notas): # Extra 05
 
     return media >= 7
 
-def test():
+def test(): 
     assert status_aluno([10, 10, 10, 10])
     assert status_aluno([10, None, 10, 10])
 
