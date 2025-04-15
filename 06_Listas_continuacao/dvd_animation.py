@@ -2,7 +2,7 @@ def limpa_tela(): #DVD Animação
     import os  
 
     os.system("cls" if os.name == "nt" else "clear")  # Limpa o console
-
+ 
 
 def espera():
     import time
