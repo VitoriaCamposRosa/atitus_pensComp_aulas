@@ -14,8 +14,13 @@ def eh_bissexto(ano: int) -> bool:
         return False
 
 def total_dias_no_mes(mes: int, ano: int) -> int:
-    # return 28, 29, 30 ou 31
-    pass
+    if mes in MESES_31_DIAS:
+        return 31
+    if mes in MESES_30_DIAS:
+        return 30
+    if eh_bissexto(ano):
+        return 29
+    return 28
 
 def test():
     assert total_dias_no_mes(1, 2024) == 31
@@ -25,8 +30,7 @@ def test():
 
 
 def formata_data(data: list) -> str:
-    # data = [dia, mes, ano]
-    pass
+    return f"{data[0]}/{data[1]}/{data[2]}"
 
 def test():
     assert formata_data([1, 2, 2024]) == "1/2/2024"
