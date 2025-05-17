@@ -27,7 +27,7 @@ def obtem_dados_endereco(cep):
 
 
 def validador_cep(cep):
-    if len(cep) != 8 and len(cep) != 9:
+    if len(cep) != 8 or len(cep) >= 9:
         return False
     elif not all(numCep in NUMEROS for numCep in cep):
         return False
