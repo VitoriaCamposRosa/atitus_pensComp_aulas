@@ -33,7 +33,7 @@ def validador_cep(cep):
         return False
     elif '-' in cep:
         partes = cep.split('-')
-        if len(partes) != 2 or len(partes[0]) != 5 or len(partes[1]) != 3:
+        if len(partes[0]) != 5 or len(partes[1]) != 3:
             return False
     return True
 
