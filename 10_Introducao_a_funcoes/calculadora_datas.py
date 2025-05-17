@@ -36,20 +36,27 @@ def test():
     assert formata_data([1, 2, 2024]) == "1/2/2024"
     assert formata_data([1, 12, 2024]) == "1/12/2024"
 
+def dias_ate(data: list) -> list:
+    dia, mes, ano = data
+    total = 0
+
+    for a in range(1, ano):
+        total += 366 if eh_bissexto(a) else 365
+    for m in range(1, mes):
+        total += total_dias_no_mes(m, ano)
+    total += dia
+    return total
+
 
 def calcula_diferenca(data1: list, data2: list) -> int:
-    def dias_ate(data):
-        dia, mes, ano = data
-        total = 0
+    return abs(dias_ate(data2) - dias_ate(data1))
 
-        for a in range(1, ano):
-            total += 366 if eh_bissexto(a) else 365
-        for m in range(1, mes):
-            total += total_dias_no_mes(m, ano)
-        total += dia
-        return total
-
-    return abs(dias_ate(data2) - dias_ate(data1)) - 1
+def calcula_percentual(inicial: list, atual: list, final: list) -> float:
+    total = calcula_diferenca(inicial, final)
+    if total == 0:
+        return 0.0
+    parcial = calcula_diferenca(inicial, atual)
+    return (parcial / total) * 100
 
 def test():
     # Diferenca em dias entre 2/7/2004 e 27/5/2024 é de 7268 dias
