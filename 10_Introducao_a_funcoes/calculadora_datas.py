@@ -49,7 +49,7 @@ def dias_ate(data: list) -> list:
 
 
 def calcula_diferenca(data1: list, data2: list) -> int:
-    return abs(dias_ate(data2) - dias_ate(data1))
+    return abs(dias_ate(data2) - dias_ate(data1)) - 1
 
 def calcula_percentual(inicial: list, atual: list, final: list) -> float:
     total = calcula_diferenca(inicial, final)

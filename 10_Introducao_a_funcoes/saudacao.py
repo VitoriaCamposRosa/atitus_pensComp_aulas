@@ -6,7 +6,7 @@ def saudacao(nome: str, sobrenome: Optional[str] = None, titulo: Optional[str] =
     elif sobrenome is None:
         return f"Olá, {titulo} {nome}"
     else:
-        return f"Olá, {titulo} {nome} {sobrenome}"   
+        return f"Olá, {titulo} {nome} {sobrenome}"    
     
 def test():
     assert saudacao("Matheus") == "Olá, Sr. Matheus"
