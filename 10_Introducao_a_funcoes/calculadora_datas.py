@@ -49,8 +49,8 @@ def calcula_diferenca(data1: list, data2: list) -> int:
         total += dia
         return total
 
-    return abs(dias_ate(data2) - dias_ate(data1))
-    
+    return abs(dias_ate(data2) - dias_ate(data1)) - 1
+
 def test():
     # Diferenca em dias entre 2/7/2004 e 27/5/2024 é de 7268 dias
     assert calcula_diferenca([2, 7, 2004], [27, 5, 2024]) == 7268
