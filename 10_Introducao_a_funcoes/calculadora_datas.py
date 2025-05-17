@@ -66,7 +66,7 @@ def test():
     # Diferenca entre 27/5/2024 e 2/7/2089 é de 23779 dias
     assert calcula_diferenca([27, 5, 2024], [2, 7, 2004 + 85]) == 23777
     # Diferenca entre 2/7/2004 e 2/7/2089 é de 31047 dias
-    assert calcula_diferenca([2, 7, 2004], [2, 7, 2004 + 85]) == 31047
+    assert calcula_diferenca([2, 7, 2004], [2, 7, 2004 + 85]) == 31046
     # A data 27/5/2024 representa 23.409669211195926% entre 2/7/2004 e 2/7/2089
 
 
