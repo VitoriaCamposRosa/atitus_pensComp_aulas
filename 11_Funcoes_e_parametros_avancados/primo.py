@@ -1,4 +1,4 @@
-def eh_primo(numero: int) -> bool:
+def eh_primo(numero: int) -> bool: 
     if numero <= 1:
         return False
     if numero % 2:
