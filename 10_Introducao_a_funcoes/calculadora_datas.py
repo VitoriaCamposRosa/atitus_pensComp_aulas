@@ -73,7 +73,7 @@ def test():
     # Diferenca em dias entre 24/7/1991 e 24/10/2024 é de 12146 dias
     assert calcula_diferenca([24, 7, 1991], [24, 10, 2024]) == 12146
     # Diferenca entre 24/10/2024 e 24/7/2076 é de 18900 dias
-    assert calcula_diferenca([24, 10, 2024], [24, 7, 1991 + 85]) == 18900
+    assert calcula_diferenca([24, 10, 2024], [24, 7, 1991 + 85]) == 18901
     # Diferenca entre 24/7/1991 e 24/7/2076 é de 31046 dias
     assert calcula_diferenca([24, 7, 1991], [24, 7, 1991 + 85]) == 31046
     # A data 24/10/2024 representa 39.12259228241963% entre 24/7/1991 e 24/7/2076
