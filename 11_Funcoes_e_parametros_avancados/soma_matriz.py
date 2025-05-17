@@ -7,7 +7,7 @@ def soma_matriz(matriz, alvo):
                 soma += valor
 
     return soma == alvo
-    
+     
 matriz = [
     [1, 2, 3],
     [4, 5, 6],

@@ -8,7 +8,7 @@ def validador_parenteses(entrada: str) -> bool:
             if contador < 0:
                 return False
         else: 
-            return False
+            return False 
     return contador == 0
 
 

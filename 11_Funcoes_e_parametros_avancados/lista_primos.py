@@ -8,7 +8,7 @@ def eh_primo(numero: int) -> bool:
 
 def lista_primos(num: int) -> list:
     resultado = []
-    for num in range(num + 1):
+    for x in range(num + 1):
         if eh_primo(x):
             resultado.append(x)
     return resultado

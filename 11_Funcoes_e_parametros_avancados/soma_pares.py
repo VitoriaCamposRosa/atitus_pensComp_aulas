@@ -5,7 +5,7 @@ def soma_pares(numeros: list, alvo: int) -> bool:
         if complement in vistos:
             return True
         vistos.add(n)
-    return False
+    return False 
 
 def test():
     assert not soma_pares([1, 2], 4)
