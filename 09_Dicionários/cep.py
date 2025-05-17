@@ -48,6 +48,12 @@ def add_endereco(cache, endereco):
     localidade = endereco.get('localidade')
     cep = endereco.get('cep')
 
+     if uf is None or localidade is None:
+        dados_completos = obtem_dados_endereco(cep)
+        uf = dados_completos.get('uf', uf)
+        localidade = dados_completos.get('localidade', localidade)
+        cep = dados_completos.get('cep', cep)
+
     if uf is None or localidade is None or cep is None:
         return cache
 
