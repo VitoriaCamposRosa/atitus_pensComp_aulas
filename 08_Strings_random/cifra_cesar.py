@@ -12,8 +12,7 @@ def caesar_cipher(texto, desvio):
         else:
             resultado.append(char)
     
-    resultado ''.join(resultado)
-    return resultado
+    return ''.join(resultado)
 
 def test():
     assert caesar_cipher("Hello, World!", 3) == "Khoor, Zruog!"

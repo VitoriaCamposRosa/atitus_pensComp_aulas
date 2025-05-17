@@ -13,7 +13,7 @@ def advinha_senha(numero_sorteado, palpites):
     else:
         respostas.append(f"Suas tentativas acabaram! O número sorteado era {numero_sorteado}.")
 
-    return respostas 
+    return respostas  
 
 def test():
     numero = 7

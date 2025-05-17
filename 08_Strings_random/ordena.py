@@ -5,7 +5,7 @@ def ordena_lista(lista):
         for j in range(0, n - i - 1):
             if lista[j] > lista[j + 1]:
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
-    return lista 
+    return lista  
 
 def test():
     assert ordena_lista([]) == []
