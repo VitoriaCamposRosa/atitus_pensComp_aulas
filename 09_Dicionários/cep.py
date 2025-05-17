@@ -27,16 +27,21 @@ def obtem_dados_endereco(cep):
 
 
 def validador_cep(cep):
-    if len(cep) != 8 or len(cep) >= 9:
-        return False
-    elif not all(numCep in NUMEROS for numCep in cep):
-        return False
-    elif '-' in cep:
-        partes = cep.split('-')
-        if len(partes[0]) != 5 or len(partes[1]) != 3:
+    if len(cep) == 8:
+        if all(char in NUMEROS for char in cep):
+            return True
+        else:
             return False
-    return True
 
+    if len(cep) == 9 and cep[5] == '-':
+        parte1 = cep[:5]
+        parte2 = cep[6:]
+        if all(char in NUMEROS for char in parte1) and all(char in NUMEROS for char in parte2):
+            return True
+        else:
+            return False
+
+    return False
 
 def add_endereco(cache, endereco):
     uf = endereco.get('uf')
