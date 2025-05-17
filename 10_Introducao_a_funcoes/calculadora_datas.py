@@ -38,8 +38,19 @@ def test():
 
 
 def calcula_diferenca(data1: list, data2: list) -> int:
-    pass
+    def dias_ate(data):
+        dia, mes, ano = data
+        total = 0
 
+        for a in range(1, ano):
+            total += 366 if eh_bissexto(a) else 365
+        for m in range(1, mes):
+            total += total_dias_no_mes(m, ano)
+        total += dia
+        return total
+
+    return abs(dias_ate(data2) - dias_ate(data1))
+    
 def test():
     # Diferenca em dias entre 2/7/2004 e 27/5/2024 é de 7268 dias
     assert calcula_diferenca([2, 7, 2004], [27, 5, 2024]) == 7268
