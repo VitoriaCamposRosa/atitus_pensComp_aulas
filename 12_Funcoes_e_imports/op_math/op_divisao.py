@@ -6,7 +6,7 @@ def divisao(a: int, b: int) -> int | None:
     positivo = True
     if a < 0:
         a = inverte_sinal(a)
-        positivo = not positivo
+        positivo = not positivo 
     if b < 0:
         b = inverte_sinal(b)
         positivo = not positivo

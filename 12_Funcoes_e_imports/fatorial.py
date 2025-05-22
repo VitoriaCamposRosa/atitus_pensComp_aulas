@@ -13,7 +13,7 @@ def fatorial_non_rec(n):
         return None 
     resultado = 1
     for i in range(1, n + 1):
-        resultado *= 1
+        resultado *= i
     return resultado
 
 

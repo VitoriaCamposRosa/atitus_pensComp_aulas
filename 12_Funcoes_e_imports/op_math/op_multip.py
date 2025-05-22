@@ -1,5 +1,5 @@
 def multiplicacao(a: int, b: int) -> int:
-    # multiplicacao(a, b): não pode usar o símbolo ‘*’
+    # multiplicacao(a, b): não pode usar o símbolo ‘*’ 
     resultado = 0
     positivo = True
     if b < 0:
