@@ -1,11 +1,8 @@
 def eh_positivo(numero): # Positivo
-    if numero > 0: #Pode utilizar return numero > 0
-        return True
-    else:
-        return False
-   
+    return numero > 0: #Pode utilizar return numero > 0
+
 def eh_negativo(numero):
-    return not eh_positivo(numero) 
+    return numero < 0
 
 def test_positive():
     assert eh_positivo(1)

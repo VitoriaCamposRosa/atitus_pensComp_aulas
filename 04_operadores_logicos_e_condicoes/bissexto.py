@@ -5,7 +5,7 @@ def eh_bissexto(ano):
         return False
      
 def proximo_bissexto(ano):
-    if ano % 4 == 0:
+    if ano % 4 == 0: 
         return ano
     if ano % 4 == 3:
        return ano + 1
