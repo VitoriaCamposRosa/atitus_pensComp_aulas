@@ -1,4 +1,4 @@
-def raiz_quadrada(valor): # Raiz quadrada
+def raiz_quadrada(valor): # Raiz quadrada 
     return valor ** (1/2)
 
 def test():
