@@ -1,4 +1,4 @@
-def hora_para_minuto(valor): # Funções e TDD
+def hora_para_minuto(valor): # Funções e TDD.
     return valor * 60
 
 def minuto_para_segundo(valor):
