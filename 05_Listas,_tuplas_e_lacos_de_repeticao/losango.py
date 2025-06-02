@@ -8,7 +8,7 @@ def desenha_losango(altura):
         asteriscos = "*" * (2 * i + 1)     
         print(espacos + asteriscos)
 
-    for i in range(altura // 2 - 1, -1, -1):
+    for i in range(altura // 2 - 1, -1, -1): 
         espacos = " " * (altura // 2 - i)
         asteriscos = "*" * (2 * i + 1)
         print(espacos + asteriscos)
