@@ -5,7 +5,7 @@ def eh_positivo(numero): # Positivo
         return False
    
 def eh_negativo(numero):
-    return not eh_positivo(numero)
+    return not eh_positivo(numero) 
 
 def test():
     assert eh_positivo(1)

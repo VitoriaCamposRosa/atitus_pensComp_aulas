@@ -10,7 +10,7 @@ def horoscopo(mes): # Horoscopo
     elif mes == 10 or mes == 11 or mes == 12:
         return "TypeScript"
 
-def test():
+def test(): 
     assert horoscopo(1) == "Python"
     assert horoscopo(3) == "Python"
 

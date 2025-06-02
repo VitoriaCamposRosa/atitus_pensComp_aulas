@@ -13,7 +13,7 @@ run_tests() {
 
 run_tests 02_Funcoes_e_TDD/
 run_tests 03_variaveis_e_operadores_matematicos/
-# run_tests 04_operadores_logicos_e_condicoes/
+run_tests 04_operadores_logicos_e_condicoes/
 # run_tests 05_Listas,_tuplas_e_lacos_de_repeticao/
 # run_tests 06_Listas_continuacao/
 # run_tests 07_Exercicios/
