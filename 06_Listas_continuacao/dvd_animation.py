@@ -45,3 +45,6 @@ while True:
         direcao_y *= -1
         colisoes += 1
 
+    if colisoes >= max_colisoes:
+        return "Número máximo de colisões atingido. Encerrando..."
+        
