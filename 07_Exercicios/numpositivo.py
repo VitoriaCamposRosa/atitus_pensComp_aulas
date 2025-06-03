@@ -16,7 +16,7 @@ def numero_positivo_u_d_c(num):
         resultado["centena"] = centena
 
     return resultado
-
+ 
 def test():
     assert numero_positivo_u_d_c(5) == {"unidade": 5}
     assert numero_positivo_u_d_c(42) == {"unidade": 2, "dezena": 4}

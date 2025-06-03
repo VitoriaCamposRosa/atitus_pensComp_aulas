@@ -15,7 +15,7 @@ def calcula_classe_social(salarios, salario_minimo): # Extra 04
     elif 1 <= salarios_minimos_per_capita < 3:
         return "D"
     else:
-        return "E" 
+        return "E"  
 
 def test():
     assert calcula_classe_social([], 1000) is None

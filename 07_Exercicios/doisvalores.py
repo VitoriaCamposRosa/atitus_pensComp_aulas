@@ -2,7 +2,7 @@ def dois_valores(x, y):   #Dois valores
     soma = x + y
 
     if soma % 2 == 0: 
-        return x
+        return x 
     else:
         return y
 

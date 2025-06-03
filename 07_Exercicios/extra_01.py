@@ -27,7 +27,7 @@ def texto_com_letra_upper(texto, letra):
             novo_texto += char
     return novo_texto
  
-def test():
+def test(): 
     assert letra_em_texto("Pensamento Computacional", "a")
     assert letra_em_texto("Pensamento Computacional", " ")
     assert not letra_em_texto("Pensamento Computacional", "A")

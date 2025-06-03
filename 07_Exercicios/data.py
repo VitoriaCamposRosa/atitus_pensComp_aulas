@@ -1,5 +1,5 @@
 def avalia_data(dia, mes, ano): 
-    if dia <= 0 or dia > 31:
+    if dia <= 0 or dia > 31: 
         return "Dia inválido"
     elif mes <= 0 or mes > 12:
         return "Mês inválido"
