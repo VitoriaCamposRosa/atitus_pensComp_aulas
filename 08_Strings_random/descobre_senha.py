@@ -16,7 +16,7 @@ def advinha_senha(numero_sorteado, palpites):
     return respostas  
 
 def test():
-    numero = 7
+    numero_sorteado = 7
     palpites = [3, 8, 7]
     resultado = advinha_senha(numero_sorteado, palpites)
 
