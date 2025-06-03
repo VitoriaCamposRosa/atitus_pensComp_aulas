@@ -14,7 +14,7 @@ def numero_positivo_u_d_c(num):
         resultado["dezena"] = dezena
     if centena != 0: 
         resultado["centena"] = centena
-
+ 
     return resultado
  
 def test():

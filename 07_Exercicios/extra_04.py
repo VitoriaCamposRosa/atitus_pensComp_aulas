@@ -1,9 +1,15 @@
-def calcula_classe_social(salarios, salario_minimo, remuneracao_per_capita): # Extra 04   
+def calcula_classe_social(salarios, salario_minimo): # Extra 04   
     if not salarios:
         return None
     
     remuneracao_total = sum(salarios)
-
+    pessoas = len(salarios)
+    
+    if pessoas == 0:
+        return None
+    
+    remuneracao_per_capita = remuneracao_total / pessoas
+    
     salarios_minimos_per_capita = remuneracao_per_capita / salario_minimo
 
     if salarios_minimos_per_capita > 15:
@@ -15,12 +21,11 @@ def calcula_classe_social(salarios, salario_minimo, remuneracao_per_capita): # E
     elif 1 <= salarios_minimos_per_capita < 3:
         return "D"
     else:
-        return "E"  
+        return "E"
 
 def test():
     assert calcula_classe_social([], 1000) is None
     assert calcula_classe_social([1000], 1000) == "E"
-    assert calcula_classe_social([500], 1000) == "E"
     assert calcula_classe_social([500], 1000) == "E"
     assert calcula_classe_social([1000, 0], 900) == "E"
     assert calcula_classe_social([1000], 900) == "D"

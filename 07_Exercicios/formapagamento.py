@@ -19,4 +19,4 @@ def test():
     assert forma_pagamento(1000, 2) == "Valor com desconto de 10%: R$900.00"
     assert forma_pagamento(1000, 3) == "Parcelado em 2x sem juros. Valor total: R$1000.00"
     assert forma_pagamento(1000, 4) == "Valor com acréscimo de 10%: R$1100.00" 
-    assert forma_pagamento(1000, 5) == "Opção inválida. Por favor, escolha uma das opções listadas." 
+    assert forma_pagamento(1000, 5) == "Opção inválida. Por favor, escolha uma das opções listadas."  

@@ -6,7 +6,7 @@ def avalia_data(dia, mes, ano):
     elif ano < 1000:
         return "Ano inválido"
     else:
-        return "Todas as condições estão válidas"
+        return "Todas as condições estão válidas" 
 
 def test():   
     assert avalia_data(32, 1, 2020) == "Dia inválido"
