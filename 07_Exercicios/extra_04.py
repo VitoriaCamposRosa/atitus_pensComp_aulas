@@ -18,7 +18,7 @@ def calcula_classe_social(salarios, salario_minimo): # Extra 04
         return "B"
     elif 3 <= salarios_minimos_per_capita < 5:
         return "C"
-    elif 1 <= salarios_minimos_per_capita < 3:
+    elif 1 < salarios_minimos_per_capita < 3:
         return "D"
     else:
         return "E"

@@ -51,7 +51,7 @@ def soma_numeros(lista):
 def test():
     lista_1 = [10, 0, -3, 42, 5, -6, 8, 91]
     lista_2 = [20, 2, 27, 74, 19, 85, 3, 22, 95, 11]
-    lista_3 = [45, 92, 23, 17, 50, 89, 57, 15, 28, 5] 
+    lista_3 = [45, 92, 23, 17, 50, 89, 57, 15, 28, 5]  
     assert maior_numero(lista_1) == 91
     assert maior_numero(lista_2) == 95
     assert maior_numero(lista_3) == 92
