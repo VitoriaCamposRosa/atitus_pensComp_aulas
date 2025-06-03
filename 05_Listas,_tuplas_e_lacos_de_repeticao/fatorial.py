@@ -5,7 +5,7 @@ def fatorial(numero): # Factorial
         return 1
 
     factorial = 1
-    for x in range(numero): 
+    for x in range(numero):  
         factorial = factorial * (x + 1)
     return factorial
     
