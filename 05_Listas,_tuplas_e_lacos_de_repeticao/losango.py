@@ -15,4 +15,5 @@ def desenha_losango(altura):
 
     return "\n".join(linhas)
 
+altura = 7
 print(desenha_losango(altura))

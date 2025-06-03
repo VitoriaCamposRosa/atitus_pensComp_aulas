@@ -10,7 +10,7 @@ def somatorio(numero):
         
 def test():
     assert somatorio(-1) is None
-    assert somatorio(0) == 0   
+    assert somatorio(0) == 0    
     assert somatorio(1) == 1
     assert somatorio(2) == 3
     assert somatorio(3) == 6
