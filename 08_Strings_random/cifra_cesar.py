@@ -1,5 +1,5 @@
 def caesar_cipher(texto, desvio):
-    resultado = []
+    resultado = [] 
 
     for char in texto:
         codigo = ord(char)

@@ -1,6 +1,6 @@
 def advinha_senha(numero_sorteado, palpites):
     respostas = []
-    tentativas = 3
+    tentativas = 3 
 
     for tentativa, palpite in enumerate(palpites[:tentativas], 1):
         if palpite == numero_sorteado:
