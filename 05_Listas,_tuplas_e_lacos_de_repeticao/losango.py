@@ -15,5 +15,4 @@ def desenha_losango(altura):
 
     return "\n".join(linhas)
 
-altura = int(input("Digite um valor ímpar para a altura do losango: "))
 print(desenha_losango(altura))
