@@ -11,7 +11,7 @@ def espera():
 
 
 def desenha_tela(altura, largura, x, y, colisoes):
-    limpa_tela()
+    limpa_tela() 
     for i in range(altura):
         for j in range(largura):
             if i == 0 or i == altura - 1 or j == 0 or j == largura - 1:

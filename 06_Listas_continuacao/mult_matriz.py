@@ -9,7 +9,7 @@ def multiply_matrix_by_scalar(matrix, scalar): # Matriz
 
         resultado.append(resultado_linha)
 
-    return resultado
+    return resultado 
 
 def test():
     matrix_1 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
