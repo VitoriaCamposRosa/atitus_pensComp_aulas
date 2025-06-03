@@ -4,7 +4,7 @@ def fahrenheit_para_celsius(valor): #Extra 07
 
 def celsius_para_fahrenheit(valor):
     return (1.8 * valor) + 32
-
+ 
 def test():
     assert fahrenheit_para_celsius(104) == 40
     assert fahrenheit_para_celsius(-13) == -25

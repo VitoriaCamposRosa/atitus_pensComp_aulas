@@ -9,7 +9,7 @@ def forma_pagamento(valor, forma_pgto):
             resultado = valor - (valor * (10 / 100))
             return f"Valor com desconto de 10%: R${resultado:.2f}"
         elif forma_pgto == 3:
-            return f"Parcelado em 2x sem juros. Valor total: R${valor}"
+            return f"Parcelado em 2x sem juros. Valor total: R${valor:.2f}"
         elif forma_pgto == 4:
             resultado = valor + (valor * (10 / 100))
             return f"Valor com acréscimo de 10%: R${resultado:.2f}"

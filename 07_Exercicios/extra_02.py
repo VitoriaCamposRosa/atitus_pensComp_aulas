@@ -61,21 +61,21 @@ def test():
     assert menor_numero(lista_3) == 5
 
     assert numeros_pares(lista_1) == [10, 0, 42, -6, 8]
-    assert numeros_pares(lista_1) == [20, 2, 74, 22]
-    assert numeros_pares(lista_1) == [92, 50, 28]
+    assert numeros_pares(lista_2) == [20, 2, 74, 22]
+    assert numeros_pares(lista_3) == [92, 50, 28]
 
     assert numeros_impares(lista_1) == [-3, 5, 91]
-    assert numeros_impares(lista_1) == [27, 19, 85, 3, 95, 11]
-    assert numeros_impares(lista_1) == [45, 23, 17, 89, 57, 15, 5]
+    assert numeros_impares(lista_2) == [27, 19, 85, 3, 95, 11]
+    assert numeros_impares(lista_3) == [45, 23, 17, 89, 57, 15, 5]
 
     assert numeros_positivo(lista_1) == [10, 0, 42, 5, 8, 91]
-    assert numeros_positivo(lista_1) == [20, 2, 27, 74, 19, 85, 3, 22, 95, 11]
-    assert numeros_positivo(lista_1) == [45, 92, 23, 17, 50, 89, 57, 15, 28, 5]
+    assert numeros_positivo(lista_2) == [20, 2, 27, 74, 19, 85, 3, 22, 95, 11]
+    assert numeros_positivo(lista_3) == [45, 92, 23, 17, 50, 89, 57, 15, 28, 5]
 
     assert numeros_negativos(lista_1) == [-3, -6]
-    assert numeros_negativos(lista_1) == []
-    assert numeros_negativos(lista_1) == []
+    assert numeros_negativos(lista_2) == []
+    assert numeros_negativos(lista_3) == []
 
     assert soma_numeros(lista_1) == 147
-    assert soma_numeros(lista_1) == 358
-    assert soma_numeros(lista_1) == 421
+    assert soma_numeros(lista_2) == 358
+    assert soma_numeros(lista_3) == 421

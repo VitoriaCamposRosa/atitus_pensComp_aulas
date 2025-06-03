@@ -3,8 +3,8 @@ def numero_positivo_u_d_c(num):
         return "Número inválido"
 
     unidade = num % 10 
-    dezena = (num / 10) % 10
-    centena = (num / 100) % 10
+    dezena = (num // 10) % 10
+    centena = (num // 100) % 10
 
     resultado = { 
         "unidade": unidade

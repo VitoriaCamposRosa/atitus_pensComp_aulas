@@ -7,7 +7,7 @@ def status_aluno(notas): # Extra 05
     media = sum(notas_validas) / len(notas_validas)
 
     return media >= 7
-
+ 
 def test(): 
     assert status_aluno([10, 10, 10, 10])
     assert status_aluno([10, None, 10, 10])

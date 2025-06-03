@@ -7,7 +7,7 @@ def meses_validos(mes):
     
         return meses[mes - 1] 
 
-def test():
+def test(): 
     assert meses_validos(1) == "Janeiro"
     assert meses_validos(12) == "Dezembro"
     assert meses_validos(0) == "Mês inválido"
