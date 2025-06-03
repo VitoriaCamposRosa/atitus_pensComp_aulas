@@ -15,4 +15,4 @@ def test():
     assert valor_pgto(100, 2) == 90
     assert valor_pgto(100, 3) == 100 
     assert valor_pgto(100, 4) == 110
-    assert isinstance(valor_pgto(100, 5), str)
+    assert isinstance(valor_pgto(100, 5), str) 

@@ -5,7 +5,7 @@ def tres_valores(x, y, z):
         return y
     elif (z - y) > x:
         return z
-    else:
+    else: 
         return x + y + z
 
 def test():

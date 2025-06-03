@@ -7,7 +7,7 @@ def saudacao(nome, sobrenome, ano_nascimento):
     idade = (ANO_ATUAL - ano_nascimento) - 1
     return f"Olá, {nome} {sobrenome}. Bom dia! Você possui {idade} anos!"
  
-def test():
+def test(): 
     assert (
         saudacao("Matheus", "Jardim", 1991)
         == "Olá, Matheus Jardim. Bom dia! Você possui 33 anos!"

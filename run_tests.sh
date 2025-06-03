@@ -16,7 +16,7 @@ run_tests 03_variaveis_e_operadores_matematicos/
 run_tests 04_operadores_logicos_e_condicoes/
 run_tests 05_Listas,_tuplas_e_lacos_de_repeticao/
 run_tests 06_Listas_continuacao/
-# run_tests 07_Exercicios/
+run_tests 07_Exercicios/
 # run_tests 08_Strings_random/
 # run_tests 09_Dicionários/
 # run_tests 10_Introducao_a_funcoes/

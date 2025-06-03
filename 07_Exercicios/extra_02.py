@@ -56,7 +56,7 @@ def test():
     assert maior_numero(lista_2) == 95
     assert maior_numero(lista_3) == 92
 
-    assert menor_numero(lista_1) == -6
+    assert menor_numero(lista_1) == -6 
     assert menor_numero(lista_2) == 2
     assert menor_numero(lista_3) == 5
 
