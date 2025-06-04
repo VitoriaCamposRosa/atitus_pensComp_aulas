@@ -11,7 +11,7 @@ def fibonacci(x):
         a, b = b, a + b
     return b 
 
-def test():
+def test(): 
     assert fibonacci(-1) is None
     assert fibonacci(0) == 0
     assert fibonacci(1) == 1
