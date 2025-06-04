@@ -16,7 +16,7 @@ def eh_bissexto(ano: int) -> bool:
         return True
     return False
 
-def test():
+def test_eh_bissexto():
     assert eh_bissexto(2000) == True
     assert eh_bissexto(1900) == False
     assert eh_bissexto(2024) == True
@@ -31,7 +31,7 @@ def total_dias_no_mes(mes: int, ano: int) -> int:
         return 29
     return 28
 
-def test():
+def test_total_dias_no_mes():
     assert total_dias_no_mes(1, 2024) == 31
     assert total_dias_no_mes(2, 2024) == 29
     assert total_dias_no_mes(3, 2024) == 31
@@ -41,7 +41,7 @@ def test():
 def formata_data(data: list) -> str:
     return f"{data[0]}/{data[1]}/{data[2]}"
 
-def test():
+def test_formata_data():
     assert formata_data([1, 2, 2024]) == "1/2/2024"
     assert formata_data([1, 12, 2024]) == "1/12/2024"
 
@@ -60,7 +60,7 @@ def dias_ate(data: list) -> list:
 def calcula_diferenca(data1: list, data2: list) -> int:
     return abs(dias_ate(data2) - dias_ate(data1))
 
-def test():
+def test_calcula_diferenca():
     # Diferenca em dias entre 2/7/2004 e 27/5/2024 é de 7268 dias
     assert calcula_diferenca([2, 7, 2004], [27, 5, 2024]) == 7269
     # Diferenca entre 27/5/2024 e 2/7/2089 é de 23779 dias
