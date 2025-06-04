@@ -3,7 +3,7 @@ def adicao(valor1: int, valor2: int) -> int:
     resultado = valor1
     if valor2 >= 0:
         for _ in range(valor2):
-            resultado += 1  
+            resultado += 1   
     else: 
         for _ in range(-valor2):
             resultado -= 1
