@@ -1,7 +1,7 @@
 def eh_primo(numero: int) -> bool:  
     if numero <= 1:
         return False
-    if numero % 2:
+    if numero % 2: 
         return True
     for i in range(2, numero):
         if numero % i == 0:

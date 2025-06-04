@@ -2,7 +2,7 @@ def soma_pares(numeros: list, alvo: int) -> bool:
     vistos = set()
     for n in numeros:
         complemento = alvo - n
-        if complement in vistos:
+        if complemento in vistos:
             return True
         vistos.add(n)
     return False 

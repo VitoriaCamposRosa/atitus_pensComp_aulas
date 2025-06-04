@@ -1,7 +1,7 @@
 def validador_parenteses(entrada: str) -> bool:
     contador = 0
     for char in entrada:
-        if char == '(':
+        if char == '(': 
             contador += 1
         elif char == ')':
             contador -= 1
