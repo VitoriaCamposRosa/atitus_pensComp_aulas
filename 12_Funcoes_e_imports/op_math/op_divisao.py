@@ -13,7 +13,7 @@ def divisao(a: int, b: int) -> int | None:
 
     resultado = 0
     acumulado = 0
-    while acumulado <= a:
+    while acumulado <= a: 
         acumulado = adicao(acumulado, b)
         if acumulado <= a:
             resultado = adicao(resultado, 1)

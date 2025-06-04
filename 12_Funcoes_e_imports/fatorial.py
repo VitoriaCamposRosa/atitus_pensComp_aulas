@@ -17,7 +17,7 @@ def fatorial_non_rec(n):
     return resultado
 
 
-# fatorial(5) = 5  * fatorial(4)
+# fatorial(5) = 5  * fatorial(4) 
 # fatorial(4) = 4  * fatorial(3)
 # fatorial(3) = 3 * fatorial(2)
 # fatorial(2) = 2 * fatorial(1)
