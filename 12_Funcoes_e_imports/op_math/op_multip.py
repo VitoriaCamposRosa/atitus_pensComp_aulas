@@ -12,7 +12,7 @@ def multiplicacao(a: int, b: int) -> int:
         resultado = adicao(resultado, a)
     if not positivo:
         resultado = inverte_sinal(resultado)
-    return resultado 
+    return resultado  
  
 def test():
     assert multiplicacao(-10, 2) == -20

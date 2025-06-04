@@ -5,5 +5,5 @@ def formula(a, b):
     soma = adicao(a, b)
     diferenca = subtracao(a, b)
     produto = multiplicacao(soma, diferenca)
-    resultado = divisao(produto, 2)
+    resultado = divisao(produto, 2) 
     return resultado    
