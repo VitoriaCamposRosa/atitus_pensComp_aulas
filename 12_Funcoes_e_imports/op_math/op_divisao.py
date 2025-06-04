@@ -10,7 +10,7 @@ def divisao(a: int, b: int) -> int | None:
     if b < 0:
         b = inverte_sinal(b)
         positivo = not positivo
-  
+   
     resultado = 0
     acumulado = 0
     while acumulado <= a: 
