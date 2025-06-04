@@ -18,11 +18,11 @@ def test():
     assert validador_parenteses("()()")
     assert validador_parenteses("(())")
     assert validador_parenteses("(()()())")
-    assert validador_parenteses("(((())()))")
+    assert validador_parenteses("(((())()))")  
 
     # Valores inválidos
-    assert validador_parenteses(")")
-    assert validador_parenteses("(")
-    assert validador_parenteses("()(")
-    assert validador_parenteses("()()())")
-    assert validador_parenteses("(((())())")
+    assert not validador_parenteses(")")
+    assert not validador_parenteses("(")
+    assert not validador_parenteses("()(")
+    assert not validador_parenteses("()()())")
+    assert not validador_parenteses("(((())())")

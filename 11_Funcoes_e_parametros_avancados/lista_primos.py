@@ -3,7 +3,7 @@ def eh_primo(numero: int) -> bool:
         return False
     for i in range(2, numero):
         if numero % i == 0:
-            return False
+            return False 
     return True
 
 def lista_primos(num: int) -> list:

@@ -15,7 +15,7 @@ matriz = [
 ]
 
 def test():
-    assert soma_matriz(matriz, 20)
+    assert soma_matriz(matriz, 20) 
     assert not soma_matriz(matriz, 18)
     assert not soma_matriz(matriz, 21)
     assert not soma_matriz(matriz, 22)
