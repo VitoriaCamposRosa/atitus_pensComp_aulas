@@ -3,7 +3,7 @@ import re
 
 def limpa_nome_pasta(nome: str) -> str:
     nome = nome.lower()
-    nome = nome.repalce(" ", "_")
+    nome = nome.replace(" ", "_")
     nome = re.sub(r'[^a-z0-9_]', '', nome)
     return nome
 
