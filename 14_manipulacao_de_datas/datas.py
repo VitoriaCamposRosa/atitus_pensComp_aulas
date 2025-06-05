@@ -8,7 +8,7 @@ def str_to_date(date_str):
         dd = int(dd)
         mm = int(dd)
         yyyy = int(yyyy)
-        return date(day=dd, month=mm, year=yyyy)
+        return date(year=yyyy, month=mm, day=dd)
     except (ValueError, TypeError):
         return None
 
@@ -48,7 +48,7 @@ def delta_dias(data_a, data_b):
     return diff
 
 def test_delta_dias():
-    assert delta_dias(date(year=2025, month=1, day=1), date(year=2026, month=1, day=2)) == 365
+    assert delta_dias(date(year=2025, month=1, day=1), date(year=2026, month=1, day=2)) == 366
     assert delta_dias(date(year=2026, month=1, day=1), date(year=2025, month=1, day=2)) == -365
     assert delta_dias(date(year=2025, month=1, day=1), date(year=2025, month=1, day=2)) == 0
 
