@@ -6,7 +6,7 @@ def str_to_date(date_str):
     try:
         dd, mm, yyyy = date_str.split('-') 
         dd = int(dd)
-        mm = int(dd)
+        mm = int(mm)
         yyyy = int(yyyy)
         return date(year=yyyy, month=mm, day=dd)
     except (ValueError, TypeError):
@@ -42,15 +42,12 @@ def test_dias_para_finde():
 
 # Quantos dias existem entre a data e hoje
 def delta_dias(data_a, data_b):
-    diff = (data_b - data_a).days
-    if abs(diff) == 1:
-        return 0
-    return diff
+    return (data_b - data_a).days
 
 def test_delta_dias():
     assert delta_dias(date(year=2025, month=1, day=1), date(year=2026, month=1, day=2)) == 366
     assert delta_dias(date(year=2026, month=1, day=1), date(year=2025, month=1, day=2)) == -365
-    assert delta_dias(date(year=2025, month=1, day=1), date(year=2025, month=1, day=2)) == 0
+    assert delta_dias(date(year=2025, month=1, day=1), date(year=2025, month=1, day=2)) == 1
 
 
 # O mesmo dia no próximo mês (ou o anterior próximo)

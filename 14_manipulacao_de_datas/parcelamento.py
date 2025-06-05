@@ -21,6 +21,8 @@ def parcelamento(valor, parcelas, dt_venda):
         valor_parcela = valor_base
         if i == parcelas - 1:
             valor_parcela += resto
+
+        valor_parcela = valor_base + (1 if i < resto else 0)
         parcelas_lista.append([valor_parcela, dt_parcela])
 
     return parcelas_lista
@@ -46,10 +48,10 @@ def test():
         [25, date(2025, 4, 30)]
     ]
     assert parcelamento(100, 6, data_venda) == [
-        [16, data_venda],
-        [16, date(2025, 2, 28)],
+        [17, data_venda],
+        [17, date(2025, 2, 28)],
         [17, date(2025, 3, 31)],
         [17, date(2025, 4, 30)],
-        [17, date(2025, 5, 31)],
-        [17, date(2025, 6, 30)]
+        [16, date(2025, 5, 31)],
+        [16, date(2025, 6, 30)]
     ]
