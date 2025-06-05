@@ -33,7 +33,7 @@ def cria_alunos(alunos: list, nome_curso: str) -> None:
     if not os.path.exists(pasta):
         os.mkdir(pasta)
     caminho_arquivo = os.path.join(pasta, "alunos.txt")
-    with open(caminho_arquivo, "w", encoding="utf-8") as f:
+    with open(caminho_arquivo, "w", encoding="utf-8") as f: 
         for aluno in alunos:
             f.write(aluno + "\n")
     print(f"Arquivo 'alunos.txt' criado com {len(alunos)} alunos na pasta '{pasta}'.")
