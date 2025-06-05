@@ -46,7 +46,7 @@ def delta_dias(data_a, data_b):
 
 def test_delta_dias():
     assert delta_dias(date(year=2025, month=1, day=1), date(year=2026, month=1, day=2)) == 366
-    assert delta_dias(date(year=2026, month=1, day=1), date(year=2025, month=1, day=2)) == -365
+    assert delta_dias(date(year=2026, month=1, day=1), date(year=2025, month=1, day=2)) == -364 
     assert delta_dias(date(year=2025, month=1, day=1), date(year=2025, month=1, day=2)) == 1
 
 
