@@ -4,9 +4,9 @@ import calendar
 # Crie método que recebe uma string (mm-dd-aaaa) e retorna uma data
 def str_to_date(date_str):
     try:
-        mm, dd, yyyy = date_str.split('-') 
-        mm = int(mm)
+        dd, mm, yyyy = date_str.split('-') 
         dd = int(dd)
+        mm = int(dd)
         yyyy = int(yyyy)
         return date(day=dd, month=mm, year=yyyy)
     except (ValueError, TypeError):

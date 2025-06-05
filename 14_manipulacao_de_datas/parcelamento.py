@@ -7,16 +7,16 @@ def parcelamento(valor, parcelas, dt_venda):
 
     parcelas_lista = []
     for i in range(parcelas):
-        ano = data_venda.ano
-        mes = data_venda.mes + i
-        while mes > 12:
-            mes -= 12
-            ano += 1
-        dia = dt_venda.dia
-        ultimo_dia_mes = calendar.monthrange(ano, mes)[1]
-        if dia > ultimo_dia_mes:
-            dia = ultimo_dia_mes
-        dt_parcela = date(ano, mes, dia)
+        year = dt_venda.year
+        month = dt_venda.month + i
+        while month > 12:
+            month -= 12
+            year += 1
+        day = dt_venda.day
+        ultimo_dia_mes = calendar.monthrange(year, month)[1]
+        if day > ultimo_dia_mes:
+            day = ultimo_dia_mes
+        dt_parcela = date(year, month, day)
 
         valor_parcela = valor_base
         if i == parcelas - 1:
@@ -39,7 +39,7 @@ def test():
         [33, date(2025, 2, 28)],
         [34, date(2025, 3, 31)]
     ]
-    assert parcelamento(100, 3, data_venda) == [
+    assert parcelamento(100, 4, data_venda) == [
         [25, data_venda],
         [25, date(2025, 2, 28)],
         [25, date(2025, 3, 31)],
