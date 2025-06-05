@@ -18,7 +18,10 @@ def parcelamento(valor, parcelas, dt_venda):
             day = ultimo_dia_mes
         dt_parcela = date(year, month, day)
 
-        valor_parcela = valor_base + (1 if i < resto else 0)
+        if i == parcelas - 1:
+            valor_parcela = valor_base + resto
+        else:
+            valor_parcela = valor_base
 
         parcelas_lista.append([valor_parcela, dt_parcela])
 

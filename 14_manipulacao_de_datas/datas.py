@@ -7,7 +7,7 @@ def str_to_date(date_str):
         dd, mm, yyyy = date_str.split('-') 
         dd = int(dd)
         mm = int(mm)
-        yyyy = int(yyyy)
+        yyyy = int(yyyy) 
         return date(year=yyyy, month=mm, day=dd)
     except (ValueError, TypeError):
         return None
