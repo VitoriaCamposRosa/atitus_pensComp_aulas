@@ -1,5 +1,5 @@
 from datetime import date, timedelta
-import calendar
+import calendar 
 
 # Crie método que recebe uma string (mm-dd-aaaa) e retorna uma data
 def str_to_date(date_str):
