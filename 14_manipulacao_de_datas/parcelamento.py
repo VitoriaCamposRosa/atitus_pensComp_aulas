@@ -30,6 +30,7 @@ def parcelamento(valor, parcelas, dt_venda):
     return resultado
 
 def test():
+    dt_venda = date(2025, 1, 28)
     assert parcelamento(100, 1, dt_venda) == [[100, dt_venda]]
     assert parcelamento(100, 2, dt_venda) == [
         [50, dt_venda],

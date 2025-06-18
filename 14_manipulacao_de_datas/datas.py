@@ -4,14 +4,14 @@ import calendar
 # Crie método que recebe uma string (mm-dd-aaaa) e retorna uma data
 def str_to_date(date_str):
     try:
-        month, day, year = date_str.split('-')
+        day, month, year = date_str.split('-')
         return date(int(year), int(month), int(day))
     except (ValueError, AttributeError):
         return None
 
 def test_str_to_date():
-    assert str_to_date('10-01-2025') == date(year=2025, month=1, day=10) 
-    assert str_to_date('10-99-2025') is None
+    assert str_to_date('01-10-2025') == date(year=2025, month=10, day=1) 
+    assert str_to_date('99-10-2025') is None
 
 
 # O nome do dia da semana (“sábado”, “domingo”, …)
