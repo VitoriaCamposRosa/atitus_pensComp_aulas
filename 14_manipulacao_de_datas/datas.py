@@ -16,7 +16,7 @@ def test_str_to_date():
 
 # O nome do dia da semana (“sábado”, “domingo”, …)
 def nome_dia_semana(data):
-    dias = [
+    dias = [ 
         "segunda-feira",
         "terça-feira",
         "quarta-feira",

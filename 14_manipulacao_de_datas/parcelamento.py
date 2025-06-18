@@ -10,7 +10,7 @@ def parcelamento(valor, parcelas, dt_venda):
     resultado = []
     
     for i in range(parcelas):
-        valor_parcela = valor_base + (1 if i < resto else 0)
+        valor_parcela = valor_base + (resto if i == parcelas - 1 else 0)
         
         if i == 0:
             data_venc = dt_venda
