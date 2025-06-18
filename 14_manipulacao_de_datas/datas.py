@@ -5,12 +5,12 @@ import calendar
 def str_to_date(date_str):
     try:
         month, day, year = date_str.split('-')
-        return date(int(day), int(month), int(year))
+        return date(int(year), int(month), int(day))
     except (ValueError, AttributeError):
         return None
 
 def test_str_to_date():
-    assert str_to_date('10-01-2025') == date(day=10, month=1, year=2025)
+    assert str_to_date('10-01-2025') == date(year=2025, month=1, day=10)
     assert str_to_date('10-99-2025') is None
 
 

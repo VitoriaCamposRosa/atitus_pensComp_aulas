@@ -2,29 +2,31 @@ from datetime import date
 import calendar
 
 def parcelamento(valor, parcelas, dt_venda):
-    resultado = []
-    valor_base  = valor // parcelas
+     if parcelas <= 0:
+        return []
+    
+    valor_base = valor // parcelas
     resto = valor % parcelas
-
+    resultado = []
+    
     for i in range(parcelas):
-
         valor_parcela = valor_base + (1 if i < resto else 0)
-
+        
         if i == 0:
-            data = dt_venda
+            data_venc = dt_venda
         else:
             ano = dt_venda.year
             mes = dt_venda.month + i
-
-            if mes > 12:
+            
+            while mes > 12:
                 mes -= 12
                 ano += 1
-
-            ultimo_dia = calendar.monthrange(ano, mes)[1]
-            data = date(ano, mes, ultimo_dia)
+            
+            _, ultimo_dia = calendar.monthrange(ano, mes)
+            data_venc = date(ano, mes, ultimo_dia)
         
-        resultado.append([valor_parcela, data])
-
+        resultado.append([valor_parcela, data_venc])
+    
     return resultado
 
 def test():
