@@ -5,7 +5,7 @@ def findWordsContaining(words: list, letter: str) -> list:
     resultado = []
     for i, word in enumerate(words):
         if letter in word:
-            resultado.append(i)
+            resultado.append(i) 
     return resultado
 
 def test():

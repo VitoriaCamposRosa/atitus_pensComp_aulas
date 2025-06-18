@@ -13,7 +13,7 @@ OBJETOS = [
     "a Steam",
     "o dungeon master",
     "o Mark Zuckerberg",
-    "o cachorro do vizinho",
+    "o cachorro do vizinho", 
     "meu pokemon favorito",
     "o ET Bilú",
     "o Zé Gotinha",

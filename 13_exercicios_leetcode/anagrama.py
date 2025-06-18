@@ -5,7 +5,7 @@ def sao_anagramas(palavra1: str, palavra2: str) -> bool:
     if len(palavra1) != len(palavra2):
         return False
 
-    for letra1 in palavra1.lower():
+    for letra1 in palavra1.lower(): 
         if letra1 in contador_palavra1:
             contador_palavra1[letra1] += 1
         else:

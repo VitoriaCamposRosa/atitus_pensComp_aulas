@@ -6,7 +6,7 @@ def busca_binaria(lista: list, valor: int) -> bool:
         meio = (inicio + fim) // 2
         if lista[meio] == valor:
             return True
-        elif valor < lista[meio]:
+        elif valor < lista[meio]: 
             fim = meio - 1
         else: 
             inicio = meio + 1

@@ -5,8 +5,8 @@ def stones_jewels(stones, jewels):
     jewels_conjunto = set(jewels)
     contador = 0
     for stone in stones:
-        if stone in jewels_conjunto
-        contador += 1
+        if stone in jewels_conjunto:
+            contador += 1
     return contador
 
 def test():

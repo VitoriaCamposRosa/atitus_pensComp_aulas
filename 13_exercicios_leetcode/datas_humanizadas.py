@@ -6,7 +6,7 @@ def data_humanizada(duracao: int) -> str:
     horas = duracao // HORA
     resto = duracao % HORA
     minutos = resto // MINUTO
-    segundos = resto % MINUTO
+    segundos = resto % MINUTO 
 
     partes = []
     if horas:
