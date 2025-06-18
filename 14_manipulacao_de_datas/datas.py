@@ -4,12 +4,9 @@ import calendar
 # Crie método que recebe uma string (mm-dd-aaaa) e retorna uma data
 def str_to_date(date_str):
     try:
-        dd, mm, yyyy = date_str.split('-') 
-        dd = int(dd)
-        mm = int(mm)
-        yyyy = int(yyyy) 
-        return date(year=yyyy, month=mm, day=dd)
-    except (ValueError, TypeError):
+        month, day, year = date_str.split('-')
+        return date(int(year), int(month), int(day))
+    except (ValueError, AttributeError):
         return None
 
 def test_str_to_date():
@@ -19,9 +16,17 @@ def test_str_to_date():
 
 # O nome do dia da semana (“sábado”, “domingo”, …)
 def nome_dia_semana(data):
-    dias_da_semana = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo']
-    return dias_da_semana[data.weekday()] 
-
+    dias = [
+        "segunda-feira",
+        "terça-feira",
+        "quarta-feira",
+        "quinta-feira",
+        "sexta-feira",
+        "sábado",
+        "domingo"
+    ]
+    return dias[data.weekday()]
+    
 def test_nome_dia_semana():
     assert nome_dia_semana(date(year=2025, month=1, day=1)) == 'quarta-feira'
     assert nome_dia_semana(date(year=2025, month=1, day=2)) == 'quinta-feira'
@@ -29,11 +34,11 @@ def test_nome_dia_semana():
 
 # Quantos dias faltam para o final de semana
 def dias_para_finde(data):
-    hoje = data.weekday()
-    if hoje <= 5:
-        return 5 - hoje
+    dia_semana = data.weekday()
+    if dia_semana >= 5:
+        return 0
     else:
-        return 6
+        return 5 - dia_semana
 
 def test_dias_para_finde():
     assert dias_para_finde(date(year=2025, month=1, day=1)) == 3
@@ -42,8 +47,9 @@ def test_dias_para_finde():
 
 # Quantos dias existem entre a data e hoje
 def delta_dias(data_a, data_b):
-    return (data_b - data_a).days
-
+    diferenca = data_b - data_a
+    return abs(diferenca.days)
+    
 def test_delta_dias():
     assert delta_dias(date(year=2025, month=1, day=1), date(year=2026, month=1, day=2)) == 366
     assert delta_dias(date(year=2026, month=1, day=1), date(year=2025, month=1, day=2)) == -364 
@@ -52,16 +58,18 @@ def test_delta_dias():
 
 # O mesmo dia no próximo mês (ou o anterior próximo)
 def proximo_mes(data_a):
-    year = data_a.year
-    month = data_a.month + 1
-    if month > 12:
-        month = 1
-        year += 1
-    day = data_a.day
-    ultimo_dia_mes = calendar.monthrange(year, month)[1]
-    if day > ultimo_dia_mes:
-        day = ultimo_dia_mes
-    return date(year=year, month=month, day=day)
+    ano = data_a.year
+    mes = data_a.month + 1
+
+    if mes > 12:
+        mes = 1
+        ano += 1
+
+    _, ultimo_dia_prox_mes = calendar.monthrange(ano, mes)
+
+    dia = min(data_a.day, ultimo_dia_prox_mes)
+
+    return date(ano, mes, dia)
 
 def test_proximo_mes():
     assert proximo_mes(date(year=2025, month=1, day=1)) == date(year=2025, month=2, day=1)
