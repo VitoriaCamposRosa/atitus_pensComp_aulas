@@ -10,7 +10,7 @@ def str_to_date(date_str):
         return None
 
 def test_str_to_date():
-    assert str_to_date('10-01-2025') == date(year=2025, month=1, day=10)
+    assert str_to_date('10-01-2025') == date(year=2025, month=1, day=10) 
     assert str_to_date('10-99-2025') is None
 
 

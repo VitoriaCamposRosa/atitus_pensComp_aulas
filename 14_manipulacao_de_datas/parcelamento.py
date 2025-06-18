@@ -2,7 +2,7 @@ from datetime import date
 import calendar
 
 def parcelamento(valor, parcelas, dt_venda):
-     if parcelas <= 0:
+    if parcelas <= 0:
         return []
     
     valor_base = valor // parcelas
