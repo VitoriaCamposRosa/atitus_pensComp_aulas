@@ -1,6 +1,6 @@
 import os
 import re
-import shutil
+import shutil 
 
 def limpa_nome_pasta(nome: str) -> str:
     disciplina = nome.lower().strip()
