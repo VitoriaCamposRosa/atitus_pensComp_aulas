@@ -2,8 +2,13 @@
 
 
 def stones_jewels(stones, jewels):
-    pass
+    jewels_conjunto = set(jewels)
+    contador = 0
+    for stone in stones:
+        if stone in jewels_conjunto
+        contador += 1
+    return contador
 
-
-assert stones_jewels(jewels="aA", stones="aAAbbbb") == 3
-assert stones_jewels(jewels="z", stones="ZZ") == 0
+def test():
+    assert stones_jewels(jewels="aA", stones="aAAbbbb") == 3
+    assert stones_jewels(jewels="z", stones="ZZ") == 0

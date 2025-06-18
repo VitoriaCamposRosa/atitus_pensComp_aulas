@@ -33,4 +33,12 @@ def string_aleatoria(opcoes: list) -> str:
 
 
 def gerador_desculpas(tarefa: str) -> str:
-    pass
+    introducao = string_aleatoria(INTRODUCOES)
+    objeto = string_aleatoria(OBJETOS)
+    evento = string_aleatoria(EVENTOS)
+    desculpa = f"{introducao} {tarefa} porque {objeto} {evento}"
+    return desculpa
+
+print(gerador_desculpas("não entreguei o relatório"))
+print(gerador_desculpas("não lavei a louça"))
+print(gerador_desculpas("esqueci sua festa"))
