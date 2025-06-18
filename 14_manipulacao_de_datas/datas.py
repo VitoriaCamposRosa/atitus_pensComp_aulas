@@ -5,7 +5,7 @@ import calendar
 def str_to_date(date_str):
     try:
         month, day, year = date_str.split('-')
-        return date(int(year), int(month), int(day))
+        return date(int(day), int(month), int(year))
     except (ValueError, AttributeError):
         return None
 
@@ -47,8 +47,7 @@ def test_dias_para_finde():
 
 # Quantos dias existem entre a data e hoje
 def delta_dias(data_a, data_b):
-    diferenca = data_b - data_a
-    return abs(diferenca.days)
+    return (data_b - data_a).days 
     
 def test_delta_dias():
     assert delta_dias(date(year=2025, month=1, day=1), date(year=2026, month=1, day=2)) == 366
