@@ -53,7 +53,7 @@ def test_is_valid_currency():
     assert is_valid_currency("XYZ", currencies) is False
 
 def test_get_new_value_with_mock(monkeypatch): 
-     def mock_get_response(coin_a: str, coin_b: str) -> dict:
+    def mock_get_response(coin_a: str, coin_b: str) -> dict:
         return {"data": {"amount": "5.0"}}
     
     monkeypatch.setattr('__main__.get_response', mock_get_response)

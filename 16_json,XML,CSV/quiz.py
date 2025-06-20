@@ -15,7 +15,7 @@ def get_questions(amount: int = 10, difficulty: str = 'easy') -> dict:
 def parse_text(html_string: str) -> str:
 
     # Convert HTML entity to regular single quote
-    return html.unescape(html_string)
+    return html.unescape(html_string) 
 
 def shuffle_answers(question: dict) -> list:
 
