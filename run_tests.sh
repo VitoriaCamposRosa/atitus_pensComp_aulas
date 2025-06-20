@@ -25,7 +25,7 @@ run_tests 12_Funcoes_e_imports/
 run_tests 13_exercicios_leetcode/
 run_tests 14_manipulacao_de_datas/
 run_tests 15_manipulacao_de_arquivos/
-# run_tests 16_json,XML,CSV/
+run_tests 16_json,XML,CSV/
 # run_tests 17_TDD/
 # run_tests 18_exercicios/
 # run_tests XX_extras/
