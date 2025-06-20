@@ -53,15 +53,12 @@ def test_is_valid_currency():
     assert is_valid_currency("XYZ", currencies) is False
 
 def test_get_new_value_with_mock(): 
-    with patch('converte_moedas.get_response') as mock_get_response:
-        mock_get_response.return_value = {
-            "data": {
-                "amount": "5.0",  
-                "currency": "BRL"
-            }
-        }
-
-        result = get_new_value(10, "USD", "BRL")
+    original = get_response
+    try:
+        def mock_get_response(coin_a, coin_b):
+            return {"data": {"amount": "5.0", "currency": "BRL"}}
         
-        assert result == 50.0
-        mock_get_response.assert_called_once_with("USD", "BRL")
+        globals()['get_response'] = mock_get_response
+        assert get_new_value(10, "USD", "BRL") == 50.0
+    finally:
+        globals()['get_response'] = original

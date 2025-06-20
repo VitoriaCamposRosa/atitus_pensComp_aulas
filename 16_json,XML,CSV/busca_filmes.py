@@ -55,7 +55,7 @@ def test_search_existing_movie():
 
     get_movies = original_get_movies
 
-def test_search_non_existing_movie(): 
+def test_search_non_existing_movie():  
     def mock_get_movies(texto_busca: str) -> Dict:
         return {"results": []}
     

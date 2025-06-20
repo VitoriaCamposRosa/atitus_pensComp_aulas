@@ -45,7 +45,7 @@ def test_check_answer():
     assert check_answer(question, "London") is False
 
 def start_quiz():
-    questions = get_questions(amount=3, difficulty="easy")["results"]
+    questions = get_questions(amount=3, difficulty="easy")["results"] 
     score = 0
 
     for question in questions:
