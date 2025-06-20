@@ -22,7 +22,7 @@ def shuffle_answers(question: dict) -> list:
     answers = question["incorrect_answers"] + [question["correct_answer"]]
     random.shuffle(answers)
     return answers
-
+ 
 def test_shuffle_answers():
     question = {
         "correct_answer": "Paris",
