@@ -53,12 +53,27 @@ def test_is_valid_currency():
     assert is_valid_currency("XYZ", currencies) is False
 
 def test_get_new_value_with_mock(): 
-    original = get_response
+    original_get_response = globals()['get_response']
+    
     try:
-        def mock_get_response(coin_a, coin_b):
-            return {"data": {"amount": "5.0", "currency": "BRL"}}
+        def mock_get_response(coin_a: str, coin_b: str) -> dict:
+            return {
+                "data": {
+                    "amount": "5.0",  
+                    "currency": "BRL",
+                    "base": coin_a
+                }
+            }
         
         globals()['get_response'] = mock_get_response
-        assert get_new_value(10, "USD", "BRL") == 50.0
+        
+        test_value = 10.0  
+        expected_result = 50.0 
+        
+        result = get_new_value("USD", "BRL", test_value)
+        
+        assert isinstance(result, float), "O resultado deve ser float"
+        assert result == expected_result, f"Esperado {expected_result}, obtido {result}"
+        
     finally:
-        globals()['get_response'] = original
+        globals()['get_response'] = original_get_response
