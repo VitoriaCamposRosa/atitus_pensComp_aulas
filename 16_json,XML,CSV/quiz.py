@@ -31,7 +31,7 @@ def test_shuffle_answers():
     answers = shuffle_answers(question)
     assert len(answers) == 4
     assert "Paris" in answers
-    assert set(answers) == {"Paris", "London", "Berlin", "Madrid"}
+    assert set(answers) == {"Paris", "London", "Berlin", "Madrid"} 
 
 def check_answer(question: dict, user_answer: str) -> bool:
     return user_answer == question["correct_answer"] 

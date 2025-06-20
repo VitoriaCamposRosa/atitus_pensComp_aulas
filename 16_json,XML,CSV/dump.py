@@ -1,7 +1,7 @@
 import json
 
 usuarios = [
-    {"id": 1, "nome": "Maria", "idade": 25, "ativo": True}, 
+    {"id": 1, "nome": "Maria", "idade": 25, "ativo": True},  
     {"id": 2, "nome": "João", "idade": 30, "ativo": False},
     {"id": 3, "nome": "Ana", "idade": 28, "ativo": True},
 ]

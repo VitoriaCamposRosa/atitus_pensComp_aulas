@@ -2,7 +2,7 @@ import http.client
 import json
 from typing import Dict, List, Optional
 
-def get_movies(texto_busca: str) -> dict:
+def get_movies(texto_busca: str) -> dict: 
     conn = http.client.HTTPSConnection("search.imdbot.workers.dev")  
     conn.request("GET", f"/?q={texto_busca}")
     response = conn.getresponse()
