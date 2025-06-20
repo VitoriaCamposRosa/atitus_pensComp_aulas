@@ -1,7 +1,9 @@
-def get_questions(amount: int = 10, difficulty: str = 'easy') -> dict:
-    import http.client
-    import json
+import http.client
+import json
+import html
+import random
 
+def get_questions(amount: int = 10, difficulty: str = 'easy') -> dict:
     conn = http.client.HTTPSConnection("opentdb.com")
     conn.request("GET", f"/api.php?amount={amount}&difficulty={difficulty}&type=multiple")
     response = conn.getresponse()
@@ -11,13 +13,11 @@ def get_questions(amount: int = 10, difficulty: str = 'easy') -> dict:
 
 
 def parse_text(html_string: str) -> str:
-    import html
 
     # Convert HTML entity to regular single quote
     return html.unescape(html_string)
 
 def shuffle_answers(question: dict) -> list:
-    import random
 
     answers = question["incorrect_answers"] + [question["correct_answer"]]
     random.shuffle(answers)
@@ -33,7 +33,7 @@ def test_shuffle_answers():
     assert "Paris" in answers
     assert set(answers) == {"Paris", "London", "Berlin", "Madrid"}
 
-def check_answer(question: dict, user_answer: str) -> bool
+def check_answer(question: dict, user_answer: str) -> bool:
     return user_answer == question["correct_answer"] 
 
 def test_check_answer():

@@ -51,16 +51,15 @@ def test_is_valid_currency():
     assert is_valid_currency("BRL", currencies) is True
     assert is_valid_currency("XYZ", currencies) is False
 
-def test_convert_currency_with_mock():
+def test_get_new_value_with_mock(get_response): 
     original_get_response = get_response
 
-    def mock_get_response(coin_a: str, coin_b: str) -> Dict:
+    def mock_get_response(coin_a: str, coin_b: str) -> dict:
         return {"data": {"amount": "5.0"}} 
 
-    global get_response
     get_response = mock_get_response
 
-    assert convert_currency(10, "USD", "BRL") == 50.0 
+    assert get_new_value(10, "USD", "BRL") == 50.0 
 
     get_response = original_get_response
 
