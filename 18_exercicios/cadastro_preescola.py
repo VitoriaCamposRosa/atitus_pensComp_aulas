@@ -21,8 +21,8 @@ def verifica_email(email: str) -> bool:
     if not nome or not dominio:
         return False
 
-    if not dominio.endswith('.com'):
-        return False
+    if not dominio.endswith('.com') or dominio.count('.com') > 1:
+        return Falsese
 
     caracteres_validos = (
         'abcdefghijklmnopqrstuvwxyz'
