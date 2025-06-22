@@ -9,9 +9,13 @@ def factorial(n: int) -> int | None:
       n! para n >= O
       None para n < O
     """
-    if not isinstance(n, int) or n < 0:
-        return None
+    if type(n) is not int:
+      return None
+
+    if n < 0:
+      return None
+
     resultado = 1
     for i in range(2, n + 1):
-        resultado *= i
-    return resultado
+      resultado *= i
+    return resultado 

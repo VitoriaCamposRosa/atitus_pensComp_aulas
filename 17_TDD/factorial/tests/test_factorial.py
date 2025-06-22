@@ -6,9 +6,9 @@ def test_factorial_none():
 
 
 # Falha pq 'bool' é interpretado como subclasse de int
-# def test_factorial_bool():
-#     assert factorial(True) is None
-#     assert factorial(False) is None
+def test_factorial_bool():
+    assert factorial(True) is None
+    assert factorial(False) is None
 
 
 def test_factorial_string():
